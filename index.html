@@ -5,21 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summer sale</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Daisy Ui and Tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body{
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <section class=" bg-[#F9F6E2]">
+    <header class="mb-28">
+        <section class=" bg-[#F9F6E2] pb-20">
             <div class="container flex flex-col-reverse md:flex-col-reverse lg:flex-row items-center justify-center mx-auto">
                 <div class=" w-full lg:w-1/2 flex flex-col justify-center items-center">
                     <h1 class="text-2xl md:text-3xl mx-auto mb-11">---SALE FEVER---</h1>
-                    <h1 class="text-5xl lg:text-6xl font-bold md:font-bold  w-4/5 text-center mb-16">Purchase TK 200 or above & get <span
-                            class="text-[#E527B2]">20% off</span></h1>
+                    <h1 class="text-5xl lg:text-6xl font-bold md:font-bold  w-4/5 text-center mb-16">Purchase TK 200 or
+                        above & get <span class="text-[#E527B2]">20% off</span></h1>
                     <div class="flex gap-4 items-center">
                         <p class=" w-max text-2xl font-medium">Use Promo Code</p>
-                        <button class="bg-[#E527B2] py-3 px-6 rounded-lg text-white text-xl md:text-2xl font-semibold">SELL200</button>
+                        <button
+                            class="bg-[#E527B2] py-3 px-6 rounded-lg text-white text-xl md:text-2xl font-semibold">SELL200</button>
                     </div>
                 </div>
                 <div>
@@ -29,7 +40,260 @@
         </section>
     </header>
     <main>
-
+        <section class="container mx-auto flex flex-col items-center md:flex-col lg:flex-row">
+            <div>
+                <!-- first cards container -->
+                <div class="mb-14">
+                    <h1 class="text-4xl font-semibold mb-8 text-center md:text-center lg:text-left">Kitchenware</h1>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- card-1 -->
+                        <div class="card w-96 bg-base-100 shadow-xl p-5">
+                            <div class="bg-[#1111110d] flex items-center justify-center py-8 rounded-lg mb-6">
+                                <figure><img src="/images/prod1.png" alt="Shoes" /></figure>
+                            </div>
+                            <div class="flex flex-col items-center gap-2">   
+                                <div class="card-body  flex flex-col gap-2 w-max p-0">
+                                    <div class="rating rating-md rating-half  w-max mx-auto">
+                                        <input type="radio" name="rating-10" class="rating-hidden" />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" checked />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    </div>
+                                    <h2 class="card-title text-2xl font-semibold">K. Accessories</h2>
+                                    <p class="text-xl font-normal text-center text-[#11111180]"><span>39.00</span> TK</p>  
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card-2 -->
+                        <div class="card w-96 bg-base-100 shadow-xl p-5">
+                            <div class="bg-[#1111110d] flex items-center justify-center py-8 rounded-lg mb-6">
+                                <figure><img src="/images/prod2.png" alt="Shoes" /></figure>
+                            </div>
+                            <div class="flex flex-col items-center gap-2">   
+                                <div class="card-body  flex flex-col gap-2 w-max p-0">
+                                    <div class="rating rating-md rating-half  w-max mx-auto">
+                                        <input type="radio" name="rating-10" class="rating-hidden" />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" checked />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    </div>
+                                    <h2 class="card-title text-2xl font-semibold">K. Accessories</h2>
+                                    <p class="text-xl font-normal text-center text-[#11111180]"><span>25.00</span> TK</p>  
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card-3 -->
+                        <div class="card w-96 bg-base-100 shadow-xl p-5">
+                            <div class="bg-[#1111110d] flex items-center justify-center py-8 rounded-lg mb-6">
+                                <figure><img src="/images/prod3.png" alt="Shoes" /></figure>
+                            </div>
+                            <div class="flex flex-col items-center gap-2">   
+                                <div class="card-body  flex flex-col gap-2 w-max p-0">
+                                    <div class="rating rating-md rating-half  w-max mx-auto">
+                                        <input type="radio" name="rating-10" class="rating-hidden" />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" checked />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                    </div>
+                                    <h2 class="card-title text-2xl font-semibold">Home Cooker</h2>
+                                    <p class="text-xl font-normal text-center text-[#11111180]"><span>49.00</span> TK</p>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- second cards container -->
+                <div class="mb-14">
+                    <div>
+                        <h1 class="text-4xl font-semibold mb-8 text-center md:text-center lg:text-left">Sportswear</h1>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- card-1 -->
+                            <div class="card w-96 bg-base-100 shadow-xl p-5">
+                                <div class="bg-[#1111110d] flex items-center justify-center py-8 rounded-lg mb-6">
+                                    <figure><img src="/images/prod4.png" alt="Shoes" /></figure>
+                                </div>
+                                <div class="flex flex-col items-center gap-2">   
+                                    <div class="card-body  flex flex-col gap-2 w-max p-0">
+                                        <div class="rating rating-md rating-half  w-max mx-auto">
+                                            <input type="radio" name="rating-10" class="rating-hidden" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" checked />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                        </div>
+                                        <h2 class="card-title text-2xl font-semibold">Sports Back Cap</h2>
+                                        <p class="text-xl font-normal text-center text-[#11111180]"><span>49.00</span> TK</p>  
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card-2 -->
+                            <div class="card w-96 bg-base-100 shadow-xl p-5">
+                                <div class="bg-[#1111110d] flex items-center justify-center py-8 rounded-lg mb-6">
+                                    <figure><img src="/images/prod5.png" alt="Shoes" /></figure>
+                                </div>
+                                <div class="flex flex-col items-center gap-2">   
+                                    <div class="card-body  flex flex-col gap-2 w-max p-0">
+                                        <div class="rating rating-md rating-half  w-max mx-auto">
+                                            <input type="radio" name="rating-10" class="rating-hidden" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" checked />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                        </div>
+                                        <h2 class="card-title text-2xl font-semibold">Full Jersey Set</h2>
+                                        <p class="text-xl font-normal text-center text-[#11111180]"><span>69.00</span> TK</p>  
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card-3 -->
+                            <div class="card w-96 bg-base-100 shadow-xl p-5">
+                                <div class="bg-[#1111110d] flex items-center justify-center py-8 rounded-lg mb-6">
+                                    <figure><img src="/images/prod6.png" alt="Shoes" /></figure>
+                                </div>
+                                <div class="flex flex-col items-center gap-2">   
+                                    <div class="card-body  flex flex-col gap-2 w-max p-0">
+                                        <div class="rating rating-md rating-half  w-max mx-auto">
+                                            <input type="radio" name="rating-10" class="rating-hidden" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" checked />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                        </div>
+                                        <h2 class="card-title text-2xl font-semibold">Sports cates</h2>
+                                        <p class="text-xl font-normal text-center text-[#11111180]"><span>159.00</span> TK</p>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- third cards container -->
+                <div class="mb-14">
+                    <div>
+                        <h1 class="text-4xl font-semibold mb-8 text-center md:text-center lg:text-left">Furniture</h1>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- card-1 -->
+                            <div class="card w-96 bg-base-100 shadow-xl p-5">
+                                <div class="bg-[#1111110d] flex items-center justify-center py-8 rounded-lg mb-6">
+                                    <figure><img src="/images/prod7.png" alt="Shoes" /></figure>
+                                </div>
+                                <div class="flex flex-col items-center gap-2">   
+                                    <div class="card-body  flex flex-col gap-2 w-max p-0">
+                                        <div class="rating rating-md rating-half  w-max mx-auto">
+                                            <input type="radio" name="rating-10" class="rating-hidden" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" checked />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                        </div>
+                                        <h2 class="card-title text-2xl font-semibold">Single Relax Chair</h2>
+                                        <p class="text-xl font-normal text-center text-[#11111180]"><span>185.00</span> TK</p>  
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card-2 -->
+                            <div class="card w-96 bg-base-100 shadow-xl p-5">
+                                <div class="bg-[#1111110d] flex items-center justify-center py-8 rounded-lg mb-6">
+                                    <figure><img src="/images/prod8.png" alt="Shoes" /></figure>
+                                </div>
+                                <div class="flex flex-col items-center gap-2">   
+                                    <div class="card-body  flex flex-col gap-2 w-max p-0">
+                                        <div class="rating rating-md rating-half  w-max mx-auto">
+                                            <input type="radio" name="rating-10" class="rating-hidden" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" checked />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                        </div>
+                                        <h2 class="card-title text-2xl font-semibold">Children play</h2>
+                                        <p class="text-xl font-normal text-center text-[#11111180]"><span>299.00</span> TK</p>  
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card-3 -->
+                            <div class="card w-96 bg-base-100 shadow-xl p-5">
+                                <div class="bg-[#1111110d] flex items-center justify-center py-8 rounded-lg mb-6">
+                                    <figure><img src="/images/prod9.png" alt="Shoes" /></figure>
+                                </div>
+                                <div class="flex flex-col items-center gap-2">   
+                                    <div class="card-body  flex flex-col gap-2 w-max p-0">
+                                        <div class="rating rating-md rating-half w-max mx-auto">
+                                            <input type="radio" name="rating-10" class="rating-hidden" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" checked />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-1" />
+                                            <input type="radio" name="rating-10" class="bg-[#FFC107] mask mask-star-2 mask-half-2" />
+                                        </div>
+                                        <h2 class="card-title text-2xl font-semibold">Flexible Sofa</h2>
+                                        <p class="text-xl font-normal text-center text-[#11111180]"><span>339.00</span> TK</p>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1">
+               
+            </div>
+        </section>
     </main>
     <footer>
 
