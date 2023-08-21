@@ -65,19 +65,30 @@ function getPriceFromCard(cardId, cardPriceId) {
     }
     //after typing the promocode 20% discount calculation
     document.getElementById('promocode-field').addEventListener('keyup', function(event){
-        const promoCodeFiledText = event.target.value;
-        if(promoCodeFiledText === 'SELL200'){
-            document.getElementById('promocode-btn').addEventListener('click', function(){
-                const discount = totalPrice * 0.2;
-                totalPriceDiscount = totalPrice - discount;
-                setValueToElement('discount', discount.toFixed(2));
-                setValueToElement('total', totalPriceDiscount.toFixed(2))
-            });
+        const promoCodeFieldText = event.target.value;
+      
+        function apply(){
+          if(document.getElementById('promocode-field').value.length === 7){
+            let discount = totalPrice * 0.2;
+            let totalPriceDiscount = totalPrice - discount;
+            setValueToElement('discount', discount.toFixed(2));
+            setValueToElement('total', totalPriceDiscount.toFixed(2));
+          }
+          // document.getElementById('promocode-btn').removeEventListener('click', apply);  
         }
-        else{
-               
+        if(promoCodeFieldText === 'SELL200'){
+            document.getElementById('promocode-btn').addEventListener('click', apply);
         }
+        
     })
     setValueToElement("total-price", totalPrice.toFixed(2));
   });
 }
+
+//function for deleting children
+function deleteChildren(elementId){
+  document.getElementById('hidden-hr').classList.add('hidden');
+  const element  = document.getElementById(elementId);
+  element.innerHTML = '';
+}
+

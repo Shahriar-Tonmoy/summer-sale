@@ -17,3 +17,31 @@ getPriceFromCard('card-6', 'card-6-price');
 getPriceFromCard('card-7', 'card-7-price');
 getPriceFromCard('card-8', 'card-8-price');
 getPriceFromCard('card-9', 'card-9-price');
+
+
+document.getElementById('go-home').addEventListener('click', function(){
+    deleteChildren('cart-items'); //cart empty
+
+    //all value reset
+    totalPrice = 0.00;
+    setValueToElement("total-price", totalPrice.toFixed(2));
+    discount = 0.00;
+    totalPriceDiscount = 0.00;
+    setValueToElement('discount', discount.toFixed(2));
+    setValueToElement('total', totalPriceDiscount.toFixed(2));
+
+    //make purchase button disable
+    const makePurchaseButton = document.getElementById("make-purchase");
+    makePurchaseButton.setAttribute('disabled', true);
+    makePurchaseButton.classList.remove("text-white");
+    makePurchaseButton.classList.add("text-gray-300");
+
+    //promocode section reset
+    document.getElementById('promocode-field').value = '';
+    const promocodeBtn = document.getElementById('promocode-btn');
+    promocodeBtn.setAttribute('disabled', true);
+    promocodeBtn.classList.remove("text-white");
+    promocodeBtn.classList.add("text-gray-300");
+
+    childCount =0;
+})
