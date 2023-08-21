@@ -68,7 +68,7 @@ function getPriceFromCard(cardId, cardPriceId) {
         const promoCodeFieldText = event.target.value;
       
         function apply(){
-          if(document.getElementById('promocode-field').value.length === 7 && promoCodeFieldText === 'SELL200'){
+          if(document.getElementById('promocode-field').value.length === 7 && document.getElementById('promocode-field').value === 'SELL200'){
             let discount = totalPrice * 0.2;
             let totalPriceDiscount = totalPrice - discount;
             setValueToElement('discount', discount.toFixed(2));
