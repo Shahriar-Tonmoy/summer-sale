@@ -74,7 +74,6 @@ function getPriceFromCard(cardId, cardPriceId) {
             setValueToElement('discount', discount.toFixed(2));
             setValueToElement('total', totalPriceDiscount.toFixed(2));
           }
-          // document.getElementById('promocode-btn').removeEventListener('click', apply);  
         }
         if(promoCodeFieldText === 'SELL200'){
             document.getElementById('promocode-btn').addEventListener('click', apply);
@@ -82,6 +81,7 @@ function getPriceFromCard(cardId, cardPriceId) {
         
     })
     setValueToElement("total-price", totalPrice.toFixed(2));
+    setValueToElement('total', totalPrice.toFixed(2));
   });
 }
 
